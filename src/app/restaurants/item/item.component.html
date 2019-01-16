@@ -1,0 +1,11 @@
+<b><a class="text-primary" (click)="openModal(restaurant)">{{ restaurant.name }}</a></b>
+<p>{{restaurant.description}}</p>
+<p>Cuisine: {{restaurant.cuisine}}</p>
+<p>Rating: <dr-rating-price
+    [iconFull] = "'assets/images/star-full.png'"
+    [iconEmpty] = "'assets/images/star-empty.png'"
+    [value] = 'restaurant.rating'></dr-rating-price></p>
+<p>Price: <dr-rating-price
+    [iconFull] = "'assets/images/coin-full.png'"
+    [iconEmpty] = "'assets/images/coin-empty.png'"
+    [value] = 'restaurant.price'></dr-rating-price></p>
